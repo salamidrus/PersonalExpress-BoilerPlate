@@ -2,7 +2,7 @@ const app = require("express")();
 
 require("./startup/dotenv")(); // env
 require("./startup/cors")(app); // enable cors
-require("./startup/db")(); // db configuration)
+require("./startup/db")(); // db configuration
 require("./startup/logger")(app); // morgan logger
 require("./startup/parser")(app); // body and url-encoded parser
 require("./startup/path")(app); // path
